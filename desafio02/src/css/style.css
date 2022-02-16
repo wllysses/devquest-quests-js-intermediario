@@ -83,7 +83,7 @@ body {
 }
 
 
-/*ATIVO JS*/
+/* CLASSE ATIVO PARA UTILIZAR NO JAVASCRIPT */
 .container .conteudo .info.ativo .resposta {
     display: block;
 }

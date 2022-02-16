@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.painel {
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.painel .imagem-slider {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    filter: brightness(70%);
+    transition: 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.painel .imagem-slider.ativo {
+    opacity: 1;
+}
+
+.painel .imagem-slider.imagem01 {
+    background-image: url('../images/4.jpg');
+}
+
+.painel .imagem-slider.imagem02 {
+    background-image: url('../images/1.jpg');
+}
+
+.painel .imagem-slider.imagem03 {
+    background-image: url('../images/3.jpg');
+}
+
+.painel .imagem-slider.imagem04 {
+    background-image: url('../images/2.jpg');
+}
+
+.painel .seta {
+    background-image: url('../images/seta.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    text-indent: 100%;
+    overflow: hidden;
+}
+
+.painel .seta.btn-voltar {
+    left: 20px;
+    transform: rotateY(180deg);
+}
+
+.painel .seta.btn-avancar {
+    right: 20px;
+}
+
+.opacidade {
+    opacity: 0.2;
+}
+
+.painel .card {
+    background-color: white;
+    width: 300px;
+    margin: 140px;
+    border-radius: 10px;
+}
+
+.painel .card .info {
+    padding: 30px;
+}
+
+.painel .card .info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.painel .card .info p {
+    font-size: 1.5rem;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.painel .card .info .saiba-mais {
+    color: red;
+    font-weight: 700;
+    font-size: 1.6rem;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .painel .card {
+        margin: 30px auto;
+    }
+}

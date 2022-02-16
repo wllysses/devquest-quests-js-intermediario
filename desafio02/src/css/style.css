@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: lightgray;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100vh;
+}
+
+.container .content-container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.253);
+    width: 60%;
+    min-height: 460px;
+    border-radius: 20px;
+    margin: 80px 0;
+
+}
+
+.container .imagem {
+    width: 50%;
+    position: relative;
+    left: -100px;
+}
+
+.container .imagem img {
+    width: 80%;
+}
+
+.container .faq {
+    width: 40%;
+}
+
+.container .faq h1 {
+    font-size: 3.6rem;
+    margin-bottom: 30px;
+}
+
+.container .conteudo .info {
+    cursor: pointer;
+    background-image: url('../images/seta.png');
+    background-repeat: no-repeat;
+    background-position: top 5px right 0;
+    background-size: 12px;
+    margin: 15px 0;
+    border-bottom: 1px solid black;
+}
+
+.container .conteudo .info:last-child {
+    border-bottom: none;
+}
+
+.container .conteudo .info .pergunta {
+    font-size: 1.8rem;
+    padding-bottom: 15px;
+    transition: 0.5s ease-in-out;
+    width: 90%;
+}
+
+.container .conteudo .info .pergunta:hover {
+    color: #F98562;
+}
+
+.container .conteudo .info .resposta {
+    display: none;
+    padding-bottom: 15px;
+    font-size: 1.6rem;
+    text-align: justify;
+}
+
+
+/*ATIVO JS*/
+.container .conteudo .info.ativo .resposta {
+    display: block;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio03 - JS Intermediário</title>
+
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <main class="container">
+        <section class="content-container">
+            <div class="info">
+                <h1>Ficou com dúvida?<br> Nos mande uma mensagem!</h1>
+                <p>Caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.</p>
+            </div>
+            <div class="formulario">
+                <form action="index.html">
+                    <div class="input-nome">
+                        <input type="text" name="nome" id="nome" placeholder="Nome completo *">
+                        <p class="msg-validacao">campo obrigatório</p>
+                    </div>
+                    <div class="input-email">
+                        <input type="email" name="email" id="email" placeholder="E-mail *">
+                        <p class="msg-validacao">campo obrigatório</p>
+                    </div>
+                    <div class="input-telefone">
+                        <input type="tel" name="telefone" id="telefone" placeholder="Telefone *">
+                        <p class="msg-validacao">campo obrigatório</p>
+                    </div>
+                    <div class="input-mensagem">
+                        <input type="text" name="mensagem" id="mensagem">
+                    </div>
+                    <span>* Campos Obrigatórios</span>
+                    <div class="input-botao">
+                        <input type="submit" value="Enviar" id="btn-enviar">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="src/js/index.js"></script>
+</body>
+</html>

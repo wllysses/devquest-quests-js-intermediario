@@ -16,30 +16,35 @@ function mostrarImagem() {
 
 btnVoltar.addEventListener('click', () => {
 
+    imagemSliderAtual--
+
+    if(imagemSliderAtual < 0) {
+        imagemSliderAtual = 0
+    }
+
     if(imagemSliderAtual === 0) {
         btnVoltar.style.opacity = '0.2'
-        return
     } else if(imagemSliderAtual <= totalImagensSlider) {
         btnAvancar.style.opacity = '1'
     }
-    
-    imagemSliderAtual--
-    console.log(imagemSliderAtual)
     
     esconderImagem()
     mostrarImagem()
 })
 
 btnAvancar.addEventListener('click', () => {
-    if(imagemSliderAtual === totalImagensSlider) {
+
+    imagemSliderAtual++
+
+    if(imagemSliderAtual > totalImagensSlider) {
+        imagemSliderAtual = 3
+    }
+    
+    if(imagemSliderAtual === totalImagensSlider) { 
         btnAvancar.style.opacity = '0.2'
-        return
     } else if(imagemSliderAtual >= 0) {
         btnVoltar.style.opacity = '1'
     }
-
-    imagemSliderAtual++
-    console.log(imagemSliderAtual)
 
     esconderImagem()
     mostrarImagem()
